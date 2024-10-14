@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.flex{
+    display: flex;
+}
+
+.logo-container {
+    width: 50%;
+    height: 50%;
+    /* margin-left: 365px;
+    padding-top: 10px; */
+}
+
+.logo-container img {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.main-nav {
+    /* position: fixed; */
+    background-color: white;
+    box-shadow: #58595B;
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.main-nav a:hover{
+    color: #C3ABA9;
+}
+
+.fourth-nav{
+    padding: 8px;
+}
+
+.fourth-nav ul{
+    justify-content: right;
+}
+.fourth-nav li{
+    list-style: none;
+    padding: 20px;
+}
+
+.third-nav{
+    width: 100%;
+    padding: 10px;
+}
+
+.third-nav ul{
+    list-style: none;
+    justify-content: center;
+}
+
+.third-nav li {
+    padding: 12px;
+    font-size: 12px;
+    font-family: inherit;
+    padding: 8px;
+    
+}
+
+.third-nav a {
+    text-decoration: none;
+    color: #1B2120;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.fourth-nav li{
+    padding: 12px;
+    font-size: 12px;
+    font-family: inherit;
+    padding: 8px;
+}
+
+.fourth-nav a {
+    text-decoration: none;
+    color: #1B2120;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 10px;
+}

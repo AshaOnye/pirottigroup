@@ -1,0 +1,180 @@
+
+        .dropdown-menu .dropdown-menu {
+            top: 0;
+            left: 100%;
+        }
+
+        .nav-link {
+            margin-right: 10px;
+
+            float: left;
+            width: 100%;
+            padding: 10px 22px;
+            line-height: 1;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            top: 0;
+            position: relative;
+            -webkit-transition: all 100ms linear;
+            -o-transition: all 100ms linear;
+            transition: all 100ms linear;
+
+        }
+
+        .logo-container {
+            width: 350px;
+            padding-left: 100px
+        }
+
+        .nav-container {
+            width: 1000px;
+            padding-left: 100px
+        }
+
+        .nav-header {
+            padding: 10px 10px 10px 10px;
+            height: 80px
+        }
+
+        .nav-logo {
+            width: 40px;
+            height: 40px
+        }
+        .nav-item{
+            padding: 5px
+        }
+
+        .dd-menu {
+            border: none;
+            /* Remove any existing borders */
+            border-bottom: 5px solid black;
+            /* Apply bottom border */
+            height: 50px;
+            /* Example height */
+        }
+
+        .nav-item.active {
+            position: relative;
+        }
+
+        .nav-item.active::before,
+        .nav-item.active::after {
+            content: "";
+            position: absolute;
+            background-color: black;
+        }
+
+        .nav-item.active::before {
+            top: 0;
+            left: 0;
+            width: 20%;
+            /* Adjust as needed */
+            height: 2px;
+        }
+
+        .nav-item.active::after {
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 40%;
+            /* Adjust as needed */
+        }
+
+        .nav-item.dropdown .dropdown-toggle::after {
+            display: none !important;
+            background-color: none
+        }
+
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .with-bar {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            /* Example height */
+        }
+
+        .bar {
+            height: 10;
+            width: 7px;
+            background-color: grey;
+            /* Set default color to grey */
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: emptyBar 0.8s forwards;
+            /* Apply the reverse animation by default */
+        }
+
+        .with-bar:hover .bar {
+            animation: fillBar 0.8s forwards;
+            /* Apply the animation on hover */
+            background-color: black;
+            /* Change background color on hover */
+        }
+
+        @keyframes fillBar {
+            from {
+                height: 0;
+                /* Start with height 0 */
+            }
+
+            to {
+                height: 100%;
+                /* Fill to 100% */
+            }
+        }
+
+        @keyframes emptyBar {
+            from {
+                height: 100%;
+                /* Start with height 100% */
+            }
+
+            to {
+                height: 0;
+                /* Empty to 0% */
+            }
+
+            /* background-color: grey; */
+            /* Set default color to grey */
+
+        }
+        
+          @media (max-width: 767px) {
+        .logo-container {
+            width: 100px;
+            padding-left: 20px
+        }
+              
+               .nav-container {
+            width: 400px;
+            padding-left: 20px;
+                   margin-top: 20px;
+                   background: white
+        }
+                .nav-item.active::before {
+            top: 0;
+            left: 0;
+            width: 5%;
+            /* Adjust as needed */
+            height: 2px;
+        }
+               .nav-item.active::after {
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 40%;
+            /* Adjust as needed */
+        } 
+               .nav-item{
+            padding-left: 10px
+        }
+        }
+
