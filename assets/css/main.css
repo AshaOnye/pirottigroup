@@ -796,6 +796,26 @@ nav{
 }
 
 
+@media only screen and (max-width:1470px) {
+  .with-bar{
+    padding: 0;
+    margin: 10px;
+  }
+
+  .logo-container {
+    width: 350px;
+    padding-left: 200px;
+    padding-bottom: 10px;
+  }
+  
+
+  .nav-container{
+    padding-left: 0;
+  }
+
+}
+
+
 @media only screen and (min-width: 1020px) and (max-width:1400px) {
   .with-bar{
     padding: 0;
@@ -845,8 +865,12 @@ nav{
     width: 100px;
   }
 
+  .with-bar a{
+    display: block;
+  }
+
   .navbar button {
-    margin-left: 290px;
+    margin-left: 170px;
   }
 }
 
