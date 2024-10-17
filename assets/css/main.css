@@ -881,15 +881,25 @@ nav{
   }
 
   .navbar button {
-    margin-right: 100px;
+    margin-left: 200px;
   }
 
   .with-bar {
     width: 100px;
-    margin: 0;
+    margin-right: 15px !important;
     padding: 0;
     position: absolute;
     right: 0;
+  }
+
+  .nav-link{
+    margin-right: 40px !important;
+  }
+
+  .nav-link{
+    display: block;
+    word-wrap: break-word !important;
+    text-wrap: wrap !important;
   }
 }
 
@@ -900,7 +910,7 @@ nav{
   }
 
   .navbar button {
-    margin-right: 100px;
+    margin-right: 0;
   }
 
   .with-bar {
@@ -908,6 +918,12 @@ nav{
     margin: 0;
     position: absolute;
     right: 0;
+  }
+
+  .nav-link{
+    display: block;
+    word-wrap: break-word !important;
+    text-wrap: wrap !important;
   }
 }
 
@@ -918,7 +934,7 @@ nav{
   }
 
   .navbar button {
-    margin-right: 100px;
+    margin-right: 0;
   }
 
   .with-bar {
@@ -926,6 +942,12 @@ nav{
     margin: 0;
     position: absolute;
     right: 0;
+  }
+
+  .nav-link{
+    display: block;
+    word-wrap: break-word !important;
+    text-wrap: wrap !important;
   }
 }
 
@@ -10771,11 +10793,20 @@ body .ui-tooltip {
   margin-right: 70px;
 }
 
+@media only screen and (max-width:1470px) {
+  .tp-hero-2-funfact-box img{
+    height: auto;
+    width: 100px;
+    margin-bottom: 350px;
+    margin-right: 70px;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tp-hero-2-funfact-box img{
     height: auto;
     width: 100px;
-    margin-bottom: 420px;
+    margin-bottom: 300px;
     margin-right: 70px;
     margin-top: 40px;
   }
